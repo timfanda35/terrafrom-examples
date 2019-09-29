@@ -1,0 +1,14 @@
+steps:
+- name: 'hashicorp/terraform'  
+  args:
+  - 'init'
+  - '-backend-config=bucket=$PROJECT_ID'
+- name: 'hashicorp/terraform'  
+  args:
+  - 'plan'
+  - '-var=PROJECT_ID=$PROJECT_ID'
+- name: 'hashicorp/terraform' 
+  args: 
+  - 'apply'
+  - '-var=PROJECT_ID=$PROJECT_ID'
+  - '-auto-approve'
