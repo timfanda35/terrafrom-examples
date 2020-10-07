@@ -1,5 +1,12 @@
 # Example - Cloudbuild
 
+Create a GCE VM with Terraform on Google Cloud Build.
+- init
+- plan
+- apply
+
+The state file stores in Google Cloud Storage bucket.
+
 ## Set the environment variables
 
 ```
