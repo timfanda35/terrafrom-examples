@@ -1,4 +1,4 @@
-# Exaple - Cloudbuild
+# Example - Cloudbuild
 
 ## Set the environment variables
 
